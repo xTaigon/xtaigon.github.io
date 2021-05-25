@@ -283,8 +283,622 @@
 						<!-- Code -->
 							<article id="code">
 								<h2 class="major">Code</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>This right here would be where my code will eventually live.</p>
+								<span class="image main"><img src="images/codebg.jpg" alt="" /></span>
+								<p>This section contains all the coding and Unity related material I have created or used during both the Game Engine 1 and Game Concept Development courses. The links provide further details about each category.</p>
+								<!--<p><a href="#movement">Movement and Camera</a></p>
+								<p><a href="#sliders">Audio Sliders</a></p>
+								<p><a href="#animation">Animation</a></p>-->
+								<p><a href="#misc">Miscellaneous</a></p>
+								<p><a href="#proto2">GCD Prototype</a></p>
+							</article>
+							
+						<!-- Code: Movement -->
+							<!--<article id="movement">
+								<h2 class="major">Movement and Camera</h2>
+								<span class="image main"><img src="images/codebg.jpg" alt="" /></span>
+								<p>Text Here.</p>
+								<p><a href="#sliders">Audio Sliders</a></p>
+								<p><a href="#animation">Animation</a></p>
+								<p><a href="#proto2">GCD Prototype</a></p>
+								<p><a href="#code">Back</a></p>
+							</article>-->
+							
+						<!-- Code: Sliders -->
+							<!--<article id="sliders">
+								<h2 class="major">Audio Sliders</h2>
+								<span class="image main"><img src="images/codebg.jpg" alt="" /></span>
+								<p>Text Here.</p>
+								<p><a href="#movement">Movement and Camera</a></p>
+								<p><a href="#animation">Animation</a></p>
+								<p><a href="#proto2">GCD Prototype</a></p>
+								<p><a href="#code">Back</a></p>
+							</article>-->
+							
+						<!-- Code: Animation -->
+							<!--<article id="animation">
+								<h2 class="major">Animation</h2>
+								<span class="image main"><img src="images/codebg.jpg" alt="" /></span>
+								<p>Text Here.</p>
+								<p><a href="#movement">Movement and Camera</a></p>
+								<p><a href="#sliders">Audio Sliders</a></p>
+								<p><a href="#proto2">GCD Prototype</a></p>
+								<p><a href="#code">Back</a></p>
+							</article>-->
+							
+						<!-- Code: Miscellaneous -->
+							<article id="misc">
+								<h2 class="major">Miscellaneous Work in Unity</h2>
+								<span class="image main"><img src="images/playermodel.jpg" alt="" /></span>
+								<p>This category contains all the miscellaneous things I have created in Unity during Game Engine 1. They could be split into further categories but there are so many little things that I don't believe they deserve their own categories as of right now.</p>
+								<span class="image main"><img src="images/playermodel2.jpg" alt="" /></span>
+								<p>The picture above is a player character model I created for use with several different assignments. It is made entirely of the defaul 3D shapes in Unity, and has a simple jumping animation attached to it. The animation itself simply reshapes the body of the model as the player holds the jump key, and returns it to normal on release. The same plays faster and in reverse as the player lands back on the ground. Examples of this can be seen below.</p>
+								<span class="image main"><img src="images/playermodel3.jpg" alt="" /></span>
+								<span class="image main"><img src="images/playermodel4.jpg" alt="" /></span>
+								<p>This same project also has a music track playing in the background as well as a sound effect attached to the player character that plays whenever the player jumps. This project served as my practice ground for many different assignments during the Game Engine 1 course, as it was my first attempt at creating a player character with a movement script, camera control, animation and sound effects. This project also holds my first attempt at a menu with functional audio sliders.</p>
+								<p><a href="#code">Back</a></p>
+							</article>
+							
+						<!-- Code: Prototype -->
+							<article id="proto2">
+								<h2 class="major">GCD Prototype</h2>
+								<span class="image main"><img src="images/protomenu.jpg" alt="" /></span>
+								<p>Here I go over everything I've done regarding the GCD Prototype, which ended up being the biggest undertaking of this entire spring. I was initially tasked with level design but I expanded my responsibilities quite a bit from there.</p>
+								<p>To begin with, the screenshot of the main menu visible above is what greets the player as they launch the game. Art isn't mine but the menu itself was made by me. All the buttons work and take the player to a few different scenes. Everything besides the background images and logo is my work.</p>
+								<span class="image main"><img src="images/protomenu2.jpg" alt="" /></span>
+								<p>As can be seen in the above image the game has audio sliders which are all set up whenever actual audio gets implemented to the game. The necessary script isn't in the project yet as there is no audio, but the structure can be seen in the audio category of this portfolio.</p>
+								<span class="image main"><img src="images/protomenu3.jpg" alt="" /></span>
+								<p>This is a simple screen that displays all the assigned inputs for the player. No rebinding is available as of right now.</p>
+								<span class="image main"><img src="images/protomenu4.jpg" alt="" /></span>
+								<p>And lastly here we see how everything is put together on Unity's side. The menu system consists of three different scenes, all utilizing the same script to switch between them. The script itself is assigned to the EventSystem object and is quite simple.<br>
+								<br>
+								<a href="#menuscript">MenuScript</a>
+								</p>
+								<span class="image main"><img src="images/protogame.jpg" alt="" /></span>
+								<p>Next up we have the first scene the player sees as they begin the game. All the sprites in the game are simple sprite objects made within Unity to serve as placeholders for the actual sprites which never got made. The ground, doors and background objects are all tagged accordingly to make scripting easier. What is also visible is a part of the player script which handles movement, jumping and attacking. Of these, the attacking part is my handiwork. I will attach the entire script here so it can be viewed in it's entirety but only specific parts of it were made by me.<br>
+								<br>
+								<a href="#playerscript">PlayerScript</a>
+								</p>
+								<p>The player's attack instantiates a clone of an existing game object, and if said clone collides with an enemy that enemy takes 1 damage. Each enemy has 3hp. The attack also has a simple animation of a falling sword.</p>
+								<span class="image main"><img src="images/proto1.jpg" alt="" /></span>
+								<span class="image main"><img src="images/proto3.jpg" alt="" /></span>
+								<span class="image main"><img src="images/proto5.jpg" alt="" /></span>
+								<p>The entirety of the village area of the prototype can be seen above. Every building has a door which can be entered, and each interior can be modified individually. Every type of house is also a separate prefab so they can be added or removed at will. Same goes for interiors. The code for entering and exiting doors is also quite simple, and can be found attached below.<br>
+								<br>
+								<a href="#doorscript">DoorScript</a>
+								</p>
+								<span class="image main"><img src="images/protospeech.jpg" alt="" /></span>
+								<p>And finally here we can see the dialogue system in action. It is mostly smoke and mirrors as the dialogue exists in the background but is inactive until the player walks to the NPC and presses the interaction key. This then activates the dialogue box as well as the first line of dialogue. The player can go through all the lines with repeated key presses, and as of right now the dialogue loops infinitely. The script I set up for this allows easy addition of new lines and is attached below.<br>
+								<br>
+								<a href="#speechscript">SpeechScript</a>
+								</p>
+								<p>And of course there is also the enemy scripting which I made some additions to as I implemented the basic combat mechanics. I also made the sprite flip directions depending on which way the enemy is facing at any given time. The rest of the enemy script is not my work, but is nevertheless available below.<br>
+								<br>
+								<a href="#enemyscript">EnemyScript</a>
+								</p>
+								<p>This covers the most important and highlight-worthy aspects of the prototype. Additional scripts and other things I've made can be found in the other categories.</p>
+								<!--<p><a href="#movement">Movement and Camera</a></p>
+								<p><a href="#sliders">Audio Sliders</a></p>
+								<p><a href="#animation">Animation</a></p>-->
+								<p><a href="#code">Back</a></p>
+							</article>
+							
+						<!-- Code: MenuScript -->
+							<article id="menuscript">
+								<h2 class="major">MenuScript</h2>
+								<pre>
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class MenuScript: MonoBehaviour
+{
+public void NextScene()
+{
+	SceneManager.LoadScene("GameScene_1");
+}
+	
+public void MainMenu()
+{
+	SceneManager.LoadScene("MainMenu");
+}
+	
+public void OptionsMenu()
+{
+	SceneManager.LoadScene("OptionsMenu");
+}
+	
+public void GuideMenu()
+{
+	SceneManager.LoadScene("GuideMenu");
+}
+	
+public void QuitGame()
+{
+	Application.Quit();
+}
+}
+								</pre>
+								<p><a href="#proto2">Back</a></p>
+							</article>
+							
+						<!-- Code: PlayerScript -->
+							<article id="playerscript">
+								<h2 class="major">PlayerScript</h2>
+								<pre>
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class PlayerScript : MonoBehaviour
+{
+    
+    private Rigidbody2D rb;
+    private bool facingRight = true;
+    private float horizontalMove = 0f;
+
+    
+    [Header("Player Movement Settings")]
+    [Range(0, 10f)] public float speed = 1f;
+    [Range(0, 15f)] public float jumpForce = 8f;
+    [Space]
+    [Header("Ground Checker Settings")]
+    public bool isGrounded = false;
+    [Range(-5f, 5f)] public float checkGroundOffsetY = -1.9f;
+    [Range(0, 5f)] public float checkGroundRadius = 0.3f;
+	
+	static Vector3 playerPosition;
+	
+	[SerializeField] private float duration;
+	//[SerializeField] public GameObject hitBox;
+	public PlayerAttack attack;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+		Cursor.visible = false;
+		Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    void Update()
+    {
+        playerPosition = transform.position;
+		
+        if (isGrounded && Input.GetKeyDown(KeyCode.W))
+        {
+            rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+        }
+
+        
+        horizontalMove = Input.GetAxisRaw("Horizontal") * speed;
+
+        
+        if (horizontalMove < 0 && facingRight)
+        {
+            Flip();
+        }
+        else if (horizontalMove > 0 && !facingRight)
+        {
+            Flip();
+        }
+		
+		if (Input.GetKeyDown("space"))
+		{
+			if (facingRight == true)
+			{
+				PlayerAttack attackHitBox;
+				attackHitBox = Instantiate(attack, new Vector2(transform.position.x + 1f, transform.position.y), transform.rotation);
+				Destroy(attackHitBox.gameObject, duration);
+				
+			}
+			
+			else if (facingRight == false)
+			{
+				PlayerAttack attackHitBox;
+				attackHitBox = Instantiate(attack, new Vector2(transform.position.x - 1f, transform.position.y), transform.rotation);
+				Destroy(attackHitBox.gameObject, duration);
+			}
+		}
+		
+		if (Input.GetKey("escape"))
+		{
+			Cursor.visible = true;
+			Cursor.lockState = CursorLockMode.None;
+			SceneManager.LoadScene("MainMenu");
+		}
+		
+		
+    }
+    private void FixedUpdate()
+    {
+        
+        Vector2 targetVelocity = new Vector2(horizontalMove * 10f, rb.velocity.y);
+        rb.velocity = targetVelocity;
+
+        CheckGround();
+    }
+
+    
+    private void Flip()
+    {
+        
+        facingRight = !facingRight;
+
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
+
+
+    private void CheckGround()
+    {
+        
+        Collider2D[] colliders = Physics2D.OverlapCircleAll
+            (new Vector2(transform.position.x, transform.position.y + checkGroundOffsetY), checkGroundRadius);
+
+        
+        if (colliders.Length > 1)
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+    }
+	
+}
+								</pre>
+								<p><a href="#proto2">Back</a></p>
+							</article>
+							
+						<!-- Code: DoorScript -->
+							<article id="doorscript">
+								<h2 class="major">DoorScript</h2>
+								<pre>
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DoorFunctionality : MonoBehaviour
+{
+	
+	[SerializeField] GameObject entryDoor;
+	[SerializeField] GameObject destinationDoor;
+	[SerializeField] GameObject player;
+	
+	[SerializeField] private bool playerIsIn;
+	
+	
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F) && playerIsIn)
+		{
+			player.transform.position = destinationDoor.transform.position;
+		}
+    }
+	
+	void OnTriggerEnter2D(Collider2D collider)
+	{
+		if (collider.gameObject.CompareTag("Player"))
+		{
+			playerIsIn = true;
+		}
+	}
+	
+	void OnTriggerExit2D(Collider2D collider)
+	{
+		if (collider.gameObject.CompareTag("Player"))
+		{
+			playerIsIn = false;
+		}
+	}
+}
+								</pre>
+								<p><a href="#proto2">Back</a></p>
+							</article>
+							
+						<!-- Code: SpeechScript -->
+							<article id="speechscript">
+								<h2 class="major">SpeechScript</h2>
+								<pre>
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NPCSpeech : MonoBehaviour
+{
+	
+	[SerializeField] private bool playerIsIn;
+	[SerializeField] GameObject dialogueBoxBackground;
+	[SerializeField] private GameObject[] dialogueText;
+	
+	[SerializeField] private int dialogueIndex = 0;
+	[SerializeField] int koko;
+	
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+		koko = dialogueText.Length;
+		
+        if (Input.GetKeyUp(KeyCode.F) && playerIsIn)
+		{
+			dialogueBoxBackground.SetActive(true);
+			
+			if (dialogueIndex >= dialogueText.Length)
+			{
+				dialogueText[dialogueText.Length - 1].SetActive(false);
+				dialogueIndex = 0;
+				NextDialogue();
+			}
+			
+			else
+			{
+				NextDialogue();
+			}
+		}
+		
+		
+		if (playerIsIn == false)
+		{
+			EndDialogue();
+		}
+    }
+	
+	void OnTriggerEnter2D(Collider2D collider)
+	{
+		if (collider.gameObject.CompareTag("Player"))
+		{
+			playerIsIn = true;
+		}
+	}
+	
+	void OnTriggerExit2D(Collider2D collider)
+	{
+		if (collider.gameObject.CompareTag("Player"))
+		{
+			playerIsIn = false;
+		}
+	}
+	
+	void NextDialogue()
+	{
+		if (dialogueIndex == dialogueText.Length)
+		{
+			dialogueText[dialogueIndex].SetActive(false);
+			dialogueIndex = 0;
+		}
+		
+		else 
+		{
+			if (dialogueIndex == 0)
+			{
+				dialogueText[dialogueIndex].SetActive(true);
+				dialogueIndex++;
+			}
+			
+			else
+			{
+				dialogueText[(dialogueIndex - 1)].SetActive(false);
+				dialogueText[dialogueIndex].SetActive(true);
+				dialogueIndex++;
+			}
+		}
+	}
+	
+	void EndDialogue()
+	{
+		dialogueBoxBackground.SetActive(false);
+		
+		for (int i = 0; i <= dialogueText.Length - 1; i++)
+		{
+			dialogueText[i].SetActive(false);
+		}
+		
+		dialogueIndex = 0;
+	}
+}
+								</pre>
+								<p><a href="#proto2">Back</a></p>
+							</article>
+							
+						<!-- Code: EnemyScript -->
+							<article id="enemyscript">
+								<h2 class="major">EnemyScript</h2>
+								<pre>
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GuardianAI : MonoBehaviour
+{
+    public float speedOfWalking = 3;
+    public int patrolDistance = 10;
+    public Transform patrolledPosition;
+    public bool movingRight;
+	
+	//Testing for HP stuff
+	public int health = 3;
+	
+	//Experimental knockback from attacks
+	private Rigidbody2D rb;
+	public float knockbackForce;
+
+    Transform player;
+    public float chasingDistance = 10;
+
+    /*used for debug*/
+    //public float DistanceToPosition;
+    /**/
+
+    private bool patrolling = true;
+    private bool chasing = false;
+    private bool returning = false;
+	
+	//Used for flipping the sprite according to direction of movement
+	private bool facingRight = true;
+
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+		rb = GetComponent<Rigidbody2D>();
+    }
+
+    void Update()
+    {
+
+        /*used for debug*/
+        //DistanceToPosition = transform.position.x - patrolledPosition.position.x;
+        /**/
+
+        if (Vector2.Distance(transform.position, player.position) < chasingDistance)
+        {
+
+            patrolling = false;
+            chasing = true;
+            returning = false;
+        }
+        
+        else if (Vector2.Distance(transform.position, patrolledPosition.position) < patrolDistance)
+        {
+            patrolling = true;
+            chasing = false;
+            returning = false;
+        }
+        
+        else if (Vector2.Distance(transform.position, player.position) > chasingDistance)
+        {
+            
+            patrolling = false;
+            chasing = false;
+            returning = true;
+        }
+
+        if (patrolling == true)
+        {
+            Patrolling();
+        }
+        else if (chasing == true)
+        {
+            Chasing();
+        }
+        else if (returning == true)
+        {
+            ReturnToPosition();
+        }
+		
+		//Flips the sprite for the enemy while patrolling
+		if (movingRight && facingRight)
+        {
+            Flip();
+        }
+        else if (!movingRight && !facingRight)
+        {
+            Flip();
+        }
+		
+		//Checking to see if the sprite needs flipping while chasing player
+		if (chasing == true && player.position.x > transform.position.x && facingRight)
+		{
+			Flip();
+		}
+		
+		else if (chasing == true && player.position.x < transform.position.x && !facingRight)
+		{
+			Flip();
+		}
+		
+		//If health drops to 0, destroy this enemy
+		if (health <= 0)
+		{
+			Destroy(this.gameObject);
+		}
+
+    }
+
+    void Patrolling()
+    {
+        
+
+        if (transform.position.x > patrolledPosition.position.x + patrolDistance / 2)
+        {
+            movingRight = false;
+        }
+        else if (transform.position.x < patrolledPosition.position.x - patrolDistance / 2)
+        {
+            movingRight = true;
+        }
+
+        if (movingRight)
+        {
+            transform.position = new Vector2(transform.position.x + speedOfWalking * Time.deltaTime, transform.position.y);
+        }
+        else
+        { 
+            transform.position = new Vector2(transform.position.x - speedOfWalking * Time.deltaTime, transform.position.y);
+        }
+    }
+
+    void Chasing()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, player.position, speedOfWalking * Time.deltaTime);
+    }
+    
+    void ReturnToPosition()
+    { 
+        transform.position = Vector2.MoveTowards(transform.position, patrolledPosition.position, speedOfWalking * Time.deltaTime);
+        
+    }
+	
+	//Once again this whole thing is used for flipping the sprite, courtesy of Juho's implementation in the player script.
+	private void Flip()
+    {
+        
+        facingRight = !facingRight;
+
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
+	
+	//Testing collider stuff out
+	void OnTriggerEnter2D(Collider2D collider)
+	{
+		if (collider.gameObject.CompareTag("PlayerAttack"))
+		{
+			health = health - 1;
+			rb.AddForce(transform.right * knockbackForce, ForceMode2D.Impulse);
+		}
+	}
+}
+								</pre>
+								<p><a href="#proto2">Back</a></p>
+							</article>
+							
+						<!-- Code: Placeholder -->
+							<article id="animation">
+								<h2 class="major">Animation</h2>
+								<span class="image main"><img src="images/codebg.jpg" alt="" /></span>
+								<p>Text Here.</p>
+								<p><a href="#movement">Movement and Camera</a></p>
+								<p><a href="#sliders">Audio Sliders</a></p>
+								<p><a href="#proto2">GCD Prototype</a></p>
+								<p><a href="#code">Back</a></p>
 							</article>
 
 						<!-- Contact -->
