@@ -1,1199 +1,188 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title>Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta charset="utf-8">
+
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="./assets/images/PeteBoiEdit.png" />
+		<title>Peter Hakanen - Portfolio</title>
+    <meta name="description" content="Personal portfolio for Peter Hakanen.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+		<script defer src="./js/script.js"></script>
 	</head>
-	<body class="is-preload">
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">My Portfolio</span>
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <a class="button" href="peter.hakanen@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Peter Hakanen</h1>
-								<p>Welcome to my work-in-progress portfolio highlighting the more meaningul<br />
-								things I have made so far for several courses and on my free time.</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">About</a></li>
-								<li><a href="#art">Art</a></li>
-								<li><a href="#design">Design</a></li>
-								<li><a href="#code">Code</a></li>
-								<!--<li><a href="#contact">Contact</a></li>-->
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <!-- 
+            TODO
 
-				<!-- Main -->
-					<div id="main">
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          -->
+          <img src="./assets/images/PeteBoiEdit.png" class="portfolio-header-image">
+         <!-- <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+            <span class="image-caption">Unemployables #1311</span>
+          </a> -->
+        </div>
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>I am a BIT student at Jamk University of Applied Sciences in Jyväskylä, Finland. I dabble in a lot of fields for now as I'm finding my core strengths and interests. Examples of my art can be found <a href="#art">here</a>, design <a href="#design">here</a> and code <a href="#code">here</a>.</p>
-								<p>My current main interest lies somewhere in the domain of design and direction. The art side of things is not exactly my forte, but I excel in creating narratives, world building and design in general.</p>
-							</article>
+          <!-- 
+            TODO
 
-						<!-- Art -->
-							<article id="art">
-								<h2 class="major">Art</h2>
-								<p>These are examples of my art for the Concept Art and Character Design course (which also heavily ties into the Game Concept Development Course).</p>
-								<h3>Photobashing Assignment</h3>
-								<span class="image main"><img src="images/photobash.png" alt="" /></span>
-								<p>This was the first art-based task for the CACD course. Photobashing was the name of the game here and I decided to go with self-drawn art and two photographs of my own. I had just gotten my hands on my new drawing tablet and got to work drawing the character. I had never used photoshop before either so this was an interesting experience. All the actual photo editing I ended up doing was rather simple, I simply cut out a piece from another photo, inserted into the other and then added the character I had drawn. For reference the two original photos used for this assignment are the following:</p>
-								<span class="image main"><img src="images/original.jpg" alt="" /></span>
-								<p>This one I flipped horizontally and tried my best to hide away the clear road to make the end result look even more like a forest.</p>
-								<span class="image main"><img src="images/reference.jpg" alt="" /></span>
-								<p>Here I cut out the structure standing in water and tried to make it look like a fortification of some sort in the final product.</p>
-								<span class="image main"><img src="images/characterv2.png" alt="" /></span>
-								<p>And finally this is the character I drew using a drawing tablet and Krita. This was my first big drawing project on the tablet, and it has nothing fancy like shading on it. All the shading was added in Photoshop. As for the drawing process itself, I first made a rough sketch for the pose, then drew another on top of that and finally made the line art to serve as a base for the image. I then decided to get rid of the defined lines and here you can see the final result. Detailing was added after the initial painting was done, and all the layers are still available and saved. The swords are also on a separate layer to make the character model more modular.</p>
-								<h3>Digital Painting Assignment</h3>
-								<span class="image main"><img src="images/necro.png" alt="" /></span>
-								<p>This was probably the "biggest" task during the entire course (excluding the RPG side of things). The objective was clear and I had some practice under my belt using the drawing tablet so I began doodling up a version of the boss enemy for our game prototype. I ended up creating an initial sketch, then modifying that as I added more detail and eventually ended up with a final sketch that had a completely different pose and look. Based off of that I began the painting process and eventually ended up with what you see here. This still lacks a lot of small details but overall I'm happy with what I ended up with. Although the drawings I've ended up with during this course are a clear reminder to me that I greatly prefer drawing with clear outlines and will probably work with that style going forward.</p>
-								<h3>Concept Art for GCD Prototype</h3>
-								<span class="image main"><img src="images/villagelayout.jpg" alt="" /></span>
-								<p>Rough layout for the playable area in the prototype.</p>
-								<span class="image main"><img src="images/villageentrance.jpg" alt="" /></span>
-								<p>A more detailed look at the starting point in the prototype.</p>
-								<span class="image main"><img src="images/cathedraldesign.jpg" alt="" /></span>
-								<p>Various doodles for possible clutter around the village as well as the look of the cathedral.</p>
-								<span class="image main"><img src="images/cathedraldetails.jpg" alt="" /></span>
-								<span class="image main"><img src="images/cathedraldetails.png" alt="" /></span>
-								<p>Some additional, more defined versions of the cathedral. These are all various concepting doodles drawn throughout the course for the purposes of visualizing the GCD prototype.</p>
-								<a href="#art">Return To Top</a>
-							</article>
-							
-						<!-- Design -->
-							<article id="design">
-								<h2 class="major">Design</h2>
-								<p>Here we have the more writing-heavy works for both Game Concept Development and Concept Art and Character Design. The links take you to the specific pages.</p>
-								<h3>Character Design</h3>
-								<h4><a href="#character1">GCD Character</a></h4>
-								<p>One of the main protagonist candidates for our game prototype. A retired warrior in a medieval fantasy setting.</p>
-								<h4><a href="#character2">Freely Designed Character</a></h4>
-								<p>A protagonist character concept. A somewhat recently turned vampire in the modern day, struggling to cope with a predetermined destiny.</p>
-								<h4><a href="#character3">Real World Character</a></h4>
-								<p>Another protagonist character concept. A young woman eeking out a living in 90's Brazil via thievery.</p>
-								<h3>RPG Design</h3>
-								<p>This covers the entirety of the materials I came up with for the RPG sessions we had during CACD. I was a GM for a game in a dystopian setting, and decided to make everything myself, from rules to the setting and world itself.</p>
-								<h4><a href="#rules">Game Rules</a></h4>
-								<p>This covers the rules used for gameplay.</p>
-								<h4><a href="#tools">Tools and Preparation</a></h4>
-								<p>Here I go over everything I did in preparation for the sessions, the tools I used etc.</p>
-								<h4><a href="#backstory">Backstory and Timeline</a></h4>
-								<p>The backstory for the two sessions we held.</p>
-								<h4><a href="#summary">Summary of the Play Sessions</a></h4>
-								<p>The summary for the entirety of the two sessions. This one's a quite a long read.</p>
-								<h3>GCD Prototype Design</h3>
-								<p>Screenshots of the GCD Prototype and explanations as to what I did and where.</p>
-								<h4><a href="#proto">Prototype Design</a></h4>
-							</article>
-							
-						<!-- RPG Rules -->
-							<article id="rules">
-								<h2 class="major">Game Rules</h2>
-								<p>The general set of rules I ended up utilizing was very simple. All the rolls were made with a single 20-sided die. None of the characters had any statistics that would affect the rolls, the only factor that could influence the final outcome besides the actual roll was the amount and quality of the player's description of their actions.</p>
-								<p>All the weapons usable by the PC's and NPC's had a set damage value associated with a succesful hit as well as a set HP value. The players each began with 30 hit points and the amount for various NPC's varied depending on both the NPC in question as well as my judgement as the GM. I would occasionally increase or lower the HP values on the fly depending on the situation going on.</p>
-								<p>The generic target number system was also quite simple, as the default number would always be 10. Depending on the difficulty of the action, and the reasonable likelihood of success, the target number would be increased or lowered accordingly on the fly by me (the GM). Roleplaying the situation well would always result in a lower target number for the player in question.</p>
-								<p>Combat was also very simplified, the system I came up with had the players roll for initiative, determining the turn order for the rest of the encounter. Every combat encounter was designed so that the players always got the first turn. After that the turns would take place one after another, and each character would be allowed one major action per turn. An attack, major movement or some other specified action would take up the entire turn, for players and enemies both.</p>
-								<p>In addition to these simple rules, each player also had a pool of 3 "hero points" available to them. These points were one-time-use only and would only replenish between sessions. The initial idea was that they would have to declare the usage of said points before making a roll, and it would guarantee success for that roll. This was given some leeway as players tended to forget that they were supposed to state it beforehand and I didn't want to be too punishing. This system was utilized much more during the second session once the players were a little more used to the mechanics and rules.</p>
-								<h4><a href="#design">Back</a></h4>
-							</article>
-							
-						<!-- Tools -->
-							<article id="tools">
-								<h2 class="major">Tools and Preparation</h2>
-								<p>The main idea behind the various tools used for the sessions was to have as little bloat as possible. The fewer new systems players would have to learn to use, the more they could focus on what mattered. With this in mind, I ended up with the following:</p>
-								<h4>Primary Tools for the Sessions</h4>
-								<p>The two main platforms for communication were Zoom for voice comms and Discord for text chat. With this in mind I created a Discord server and invited all of the players there beforehand so everyone could read through the backstory and get used to the layout of the server.</p>
-								<span class="image main"><img src="images/discordtimeline.jpg" alt="" /></span>
-								<p>Zoom was used as the primary voice communication platform, although as we had some minor technical issues we also used Discord temporarily for the same purpose as well.</p>
-								<p>As for the dice rolls, I had added a dice bot to the Discord server which took care of all our dice rolling needs via simple commands in text chat. This way everyone could see the results for both the PC's and NPC's.</p>
-								<span class="image main"><img src="images/dicebot.jpg" alt="" /></span>
-								<p>The final tool I utilized to bring some added flavor and quality of life features to the second session was <a href="https://owlbear.rodeo">Owlbear.rodeo</a>. It is a website that allows easy access to some basic DnD-style tools for both the GM and the players.</p>
-								<span class="image main"><img src="images/owlbear.jpg" alt="" /></span>
-								<p>The main use for Owlbear was displaying rough overview maps (drawn by me) of the areas the players were in and covering undiscovered areas in "fog" so as to keep them hidden from the players until they proceeded further.</p>
-								<span class="image main"><img src="images/warehouse.png" alt="" /></span>
-								<span class="image main"><img src="images/base.png" alt="" /></span>
-								<span class="image main"><img src="images/fog.jpg" alt="" /></span>
-								<span class="image main"><img src="images/fog2.jpg" alt="" /></span>
-								<p>And here's an example of the Owlbear interface (grey area is hidden from the players, only visible to the GM).</p>
-								<h4>Tools for Creating the Content</h4>
-								<p>The tools used for creating everything for the sessions were really quite simple, mostly just Word, Notepad and Paint. The initial setting and elements of the timeline and backstory was created using MindMup, an example of which is below.</p>
-								<span class="image main"><img src="images/mindmap.jpg" alt="" /></span>
-								
-								<h4><a href="#design">Back</a></h4>
-							</article>
-							
-						<!-- Backstory -->
-							<article id="backstory">
-								<h2 class="major">Backstory and Timeline</h2>
-								<h3>The Timeline for World 1:</h3>
-								<p>2021 -> 2500: Major advances in genetics, science and technology leads to a future where countries are irrelevant, and companies are the major governing force. Gene splicing and advanced genetic enhancement has become the norm as more and more people rush to enhance themselves with animalistic traits and other non-human qualities.</p>
-								<p>2500-2599: People are starting to worry more and more about the long-term and hereditary issues modified genetics might cause and the market comes crashing down. As most major companies have banked everything on this being the way of the future they start working on the concept of supercities, nation-like cities that provide shelter and infrastructure to the people who are growing ever more restless due to the divide between genetically altered people and “normal” people. Society as has been known until this point starts to collapse and riots and brawls in the streets grow more common every day.</p>
-								<p>2600: The first supercity finishes construction. It is named The First City and people fight for the right to relocate into the city. Construction on additional cities proceeds along. A massive divide now separates enhanced and non-enhanced humans. Regular people now consider the altered sub-human and mass discrimination is commonplace. The small amount of altered people and their families that got into the First City before its gates were closed reside in slums at the edges of the city.</p>
-								<p>2800: A breakthrough in cybernetic technology allows enhancement to become commonplace. The technology is expensive and as such only the wealthiest can afford it. The rush to adopt this new technology resembles the mad dash for genetic enhancement centuries ago but only a minority of the populace can afford cybernetics. Two more supercities finish construction and are named The Second and Third City, respectively. These new supercities provide refuge to the massive number of genetically altered populace still locked out of The First City, as well as providing an alternative for regular folk to relocate to. Each city is governed by a group of extremely wealthy ex-corporates who make the major decisions regarding the cities. Two more supercities are still under construction.</p>
-								<p>2900: The Fourth City opens its gates for people. As more and more people are living within the first three cities and the remaining populace living in small communities outside the existing cities and construction sites as well as moving into the fourth city en masse, nature as a whole is starting to disappear entirely due to all the pollution and waste dumped outside the cities. The cities themselves are having some issues with law enforcement as the ruling elite do not care about the average person’s troubles. As an answer to this, the now cybernetically enhanced ruling elite (ex-corporates and wealthiest people within each city) officially forms the Regime, a governing body to rule the First City utilizing their own networks for communication. This is somewhat of a test run before their plan to expand their reign to each of the other cities. The Regime also establishes RAMP, Regime Authorized Military Police force to both act as military task force for themselves and to take care of law enforcement in general.</p>
-								<p>2940: The Fifth City never finishes its construction as intended since the workers went on a strike to oppose the Regime’s more and more oppressive take on governing the existing cities. Regime expands its control to now cover all the existing cities as well as whatever skeleton of a framework already exists for the Fifth City, now serving as the last bastion for people who either couldn’t get into any of the four preceding cities or have escaped them in order to get a fresh start. The Fifth City is a city in name only, as every day living there is a struggle.</p>
-								<p>302X: The current year. Several small resistance factions have sprung up in the last 80 or so years since the Regime’s official establishment of control over the cities. The RFA in particular has made several successful strikes against Regime control in the Second City and is considered an officially recognized terrorist organization by the Regime. All RFA members and affiliates are wanted criminals in all of the cities. You are located in the Third City at this time as you receive a mysterious invitation from a contact claiming to belong to a small-time resistance group simply calling itself the Third City Resistance. Having done successful mercenary work in the past you are allured by the promise of a hefty reward and decide to head into the bar mentioned in the invitation.</p>
-								<h4><a href="#design">Back</a></h4>
-							</article>
-							
-						<!-- Summary -->
-							<article id="summary">
-								<h2 class="major">Summary of the Play Sessions</h2>
-								<h3>Session 1:</h3>
-								<p>The party gathers at a bar called The Dive, one by one, having received a letter from someone called the Stranger. As they get settled and exchange greetings, they are passed by a hooded figure telling them to follow. The party decides to follow this person into the adjacent alleyway. After some initial hesitation, the party reaches a small clearing further down the alley and presented with a rolled-open cloth holding various armaments. Each party member picks some weaponry (baton and handgun for Dad, handgun and knife for Rex, knife and SMG for Ava and a baseball bat and sawed-off shotgun for Jag’er). Immediately after the party is attacked by a group of three thugs armed with various melee weapons and combat begins. Some time and struggling later the assailants are all taken care of, and the party hears slow clapping from the furthest end of the alley. The hooded person they were initially following approaches, sporting a mask that covers any and all distinguishable features about themselves.</p> 
-								<p>"Well done people, well done! Terribly sorry about this crude introduction but I had to make sure you were up to the job. Each of you have showed promise in the past but what I am offering truly requires you to get your hands dirty. I even went to great lengths to provide you with armaments each of you might prefer, and you of course understand why all of these must be easily concealable. RAMP activity in the Third City is through the roof these days and walking around with a weapon in hand is not the best idea.</p>
-								<p>Now onto my offering. The Third City Resistance has recently acquired some information about a large shipment of RAMP weaponry arriving in the city via the eastern gate. Normally this kind of a delivery would be made using an aircraft to prevent any trouble along the way but our associates at the Fourth City made sure this one would be carried by truck. The shipment will arrive in an unremarkable warehouse at the edge of the city where it will then be loaded into a cargo chopper and delivered to RAMP HQ that way. What I want you guys to do is prepare an infiltration into that warehouse as the cargo sits there overnight, take out the guards stationed there and give me the all-clear so our troops can secure the shipment before more RAMP forces arrive at the scene."</p>
-								<p>"We are quite a way away from the warehouse, but we will have to go our separate ways. We cannot risk being seen in that area before you give us the all-clear. I've provided a car for you to use, or if you prefer, you can brave the streets but fair warning, this is not the friendliest neighborhood in the City. Then again, you've clearly proven more than capable of handling yourselves."</p> 
-								<p>The Stranger offers each party member a radio.</p>
-								<p>"The guards change shifts at nightfall, you should start your infiltration shortly after. When you are done, contact me with this. Good luck!"</p>
-								<p>After some further inquiries regarding the exact prize for this particular job (the Stranger promises further information and all the money anyone would need), the party decides to proceed on foot. After traversing for a while, getting a little more acquainted with each other and the various reasons for everyone being here, the party runs into a clearly very panicked person running out of an alley. This man has reptilian eyes and a fat wallet in his hands. Begging for the party to help him, he tries to explain how he needs the money for his child. The party peeks into the alley and notices a rather large man kneeling and grunting back there.</p>
-								<p>Jag’er decides to knock the thief out cold, take the wallet and proceeds to walk away. A giant of a man rushes out of the alleyway, asking about the wallet. The party quickly explains what happened and the man-giant performs a record-breaking sprint to catch up to Jag’er, who is by now 10 or so meters ahead of everyone else. The angry man grabs Jag’er with both of his arms and throws him back towards the rest of the party, who now enter combat. As the large man had some distance to cross, Dad quickly scanned his surroundings to find anything of use and decided in a moment of genius (or madness) to utilize some nearby bricks to build a wall between the party and the approaching man. Unfortunately, there were only so many bricks, so the end result was more akin to six or so bricks stacked on top of each other. With some confusion about Dad’s decision the large man keeps approaching the party, walking effortlessly through Dad’s construct. The party then proceeds to shoot the man dead, managing to do so just before he could land even a single blow.</p>
-								<p>As the party continues forward they discuss their next move. With the newfound funds Jag'er decides to offer a meal to everyone and the party soon spies a restaurant on the side of the road. As they enter Jag'er negotiates for some under the counter goods and, after some hesitation from the clerk, manages to establish trust by showing his feline legs, so as to guarantee that they are not in any way affiliated with RAMP. The clerk then presents various firearms to the group and Jag'er spends his money on a magnum revolver. Everyone has something to eat and recovers a little.</p> 
-								<p>Some time after the group find themselves on an empty abandoned overpass, and as they are in the middle of crossing it, they hear a gunshot echo in the distance. Following the gunshot, a piece of concrete right next to them explodes to smithereens. One of them notices a laser pointer and deduces that there might be a sniper aiming right at them. The party takes cover and considers their surroundings, noticing several pipes and scaffoldings on the left side (right next to them) of the overpass. Rex takes the lead, jumping down to the initial piping and having confirmed that they indeed can support them the rest of the group follows. Everyone makes the three jumps required to land back on solid ground, some with more effort than others. The party then proceeds to carry on along an adjacent street, out of view from the sniper.</p> 
-								<p>Some time later the group arrives at their destination. The target warehouse compound has a chainlink fence surrounding it with no noticeable holes on this side, and before exploring further the party decides to wait until nightfall as instructed by the Stranger. They approach a nearby abandoned store, with the idea that they could perhaps peek over the fence from the roof, and Ava attempts to climb up the fire escape. As she does, the fire escape crumbles and falls off, Ava doing her best to negate the majority of the impact. Dad being a medic attempts to heal her wounds, but all the stress so far makes him miss with his stitching needle and instead ends up dealing more damage to Ava. The party then decides to enter the abandoned building and rest until nightfall.</p>
-								<p>As night is upon them, they hear several vehicles approach the compound, the gate open and shortly after presumably the same vehicles leaving. They deduce that the shift has now changed and decide on a new approach for infiltration. The party splits into two, each following the fence in opposite directions and plan on meeting up at the other end. Each pair follows the fence all the way around, meeting in the middle again and notice a large enough hole to possibly crawl through. Jag’er takes the lead and goes in first but ends up getting stuck by his feline hips. As he struggles to get free, the party decides to give him a collective push to help him through and succeed, in the process ripping the hole just a tiny bit more open so the rest of the group can fit through without any issues. They proceed to do just that, and as they enter the compound, they notice a guard standing roughly five meters ahead of them, back turned towards the party.</p>
-								<h4>End of session 1.</h4>
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+              <span class="main-title">Howdy, I'm Peter Hakanen.</span>
+              <div class="body-text">I’m a game development student and general video game enthusiast. I also go by Taigon or some variation of it as my online handle.</div>
+            </div>
+            <a class="button" id="my-work-link">
+              <span class="button-text">Check out my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+        </div>
+      </div>
 
-								<h3>Session 2:</h3>
-								<p>Besides the initial guard right in front of the party, they also notice six other guards standing in sight. Two guarding the east gate, two at the main gate and two by the entrance to the warehouse itself. The party decides on a stealthy approach, initially grabbing the guard in front of them into a stranglehold and then knocking them unconscious. Rex takes the outfit the guard was wearing and pretends to hold the rest of the party as prisoners. They approach the warehouse guards in this manner, and Rex silently whispers something to each of them, attempting to get them to follow the party inside. As they enter the warehouse, they notice a small office on the left side with a closed door and two more guards behind the truck that is standing in front of them. The party then decide on assassinating the two guards that are with them, stabbing both. One of the guards gets stabbed directly through the throat and crumbles to the ground without making a peep, but the other one appears to be wearing some kind of armor underneath his clothing. Dad then takes his electric baton and the lighting jolts through the guard’s body, killing them. The group quickly fit themselves inside the truck’s cabin, a tight squeeze for four people but they make it work and proceed to hightail it out of the compound. As they attempt to ram down the main gate, they initially crash into it and come to a stop, but the gate eventually gives in and the party gets away with the truck.</p>
-								<p>Some distance away from the warehouse, the party contacts Stranger and agrees on a nearby meeting place. While they wait for Stranger to arrive they congratulate each other on a job well done. They then hear approaching vehicles, but do not see who approaches since it is nighttime and there are no street lamps around. Stranger approaches the group and congratulates them. “Excellent work guys, everything went as smoothly as I had hoped. I believe it is now time for some well-deserved answers.” Having said this, the Stranger removes his mask. This reveals a face covered in severe cybernetic augments. “The Regime thanks you for your service, the Third City Resistance maybe not so much. You did just raid a warehouse and steal their weapons after all.” As this is happening the party realizes they are being surrounded by RAMP soldiers, at least eight assault rifles pointed directly at them. Jag’er tries to fight back, knocking one of the soldiers out with a punch that shatters his helmet. Jag’er then receives similar treatment, getting a rifle butt to the head and is knocked unconscious. The rest of the party suffers the same fate, and some time passes.</p>
-								<p>The group wakes up to the sound of people scurrying about. They see another group of armed people, this time sporting similar outfits to the guards at the warehouse. One person approaches them and explains that they are the real Third City Resistance (editor’s note: I kinda forgot to add it in-game but he was supposed to explain a little further how the weapons delivery was secured in the Fourth City by a collaborating resistance group and that’s why it was delivered by a truck, as RAMP forces use mainly aircraft for cargo delivery) and sarcastically remarks what a great job the party has done. He then offers a “choice”, meet up with the leader of this group, Laura Reeve, or be shot right here and now. The party agrees to meet up with Reeve and are assigned one TCR member to act as a guide.</p>
-								<p>As they are traveling towards the TCR safehouse where Reeve is located, the party notices a medical clinic advertising free treatment for everybody, including altered people. As they are a little worse for wear at the moment, the party decides to pop in. The TCR soldier guiding them stays outside to keep watch. The party goes inside, gets their wounds treated and as they are wrapping things up with the doctor a door opens behind the doctor and a small, skeletal child appears. The child whispers “Help me!” as the doctor kicks the door back closed again. Intrigued, the party questions the doctor about this. She explains that it’s nothing to worry about and since the party is all healed up now, they should leave. She then excuses herself and goes in the room the child appeared from. The party decides to follow, only to find the door locked. Ava ends up picking the lock open and the party goes in. There are children all over the room, all rather sickly-looking and clearly being experimented on by the doctor. Dad immediately confronts the doctor and asks what the hell is going on here. The doctor tries to explain how all of these kids are street orphans that nobody misses or wants, and that their sacrifice goes a long way towards the greater good. The party doesn’t buy it and confront the doctor further. She backs away and, in a panic, injects herself with a syringe she had on the table behind her. This visibly flies her into some kind of a frenzy, her eyes getting bloodshot, and she grabs a scalpel in each hand. Combat ensues. The doctor proved surprisingly resilient, most likely due to the injection she gave herself, but goes down eventually. As the party is about to leave Dad remarks to the children that they are free now and should stay here for a while. As the group meets up with their escort back outside, they inform him about the kids inside and he contacts someone on a radio. He then says: “Don’t worry, they will be taken care of by the TCR.” The party proceeds onwards.</p>
-								<p>As they reach the safehouse, they notice that it is an old apartment building converted into a makeshift base of operations, TCR members going about their business all over the place. They try to ask around where they could find Laura Reeve when she makes her presence known right behind them. Reeve explains that this one of the minor operating bases of the Third City Resistance. She also tells the party that the Stranger got away with the weapons, and that the Stranger is in fact the Officer, one of the people in charge of overseeing RAMP operations within the cities. He is also the person responsible for capturing Jag’er’s father, whom they still have in custody somewhere. She also explains how they had a tracker planted on the weapon crates so she can point the party in the direction of a small RAMP outpost where the weapons are temporarily being held. Seeing how they just lost all their new weaponry they were expecting they can’t offer better armaments to the party at this time, but they can provide a diversion if the party decides to assault the outpost directly. She gives the party a bomb that they should plant at the base after the weapons have been secured and can also provide a ride closer to the base.</p>
-								<p>Having taken up Reeve’s offer for the ride, the party is informed of what to look for. Apparently, the building in question has a seemingly unguarded front door. It is an undercover outpost, so they don’t want to draw any attention towards it. The building also has a garage entrance in the back, but there constantly two soldiers posted there. Lastly, there might be additional entryways on the roof of the building but that is TCR knows at this time. The party decides initially to focus on the possible rooftop entryways.</p>
-								<p>As they arrive at their final destination, the party notices that the information was accurate. There is a unguarded front door as well as an alleyway right beside the building with a fire escape just out reach. The group decide to collectively boost Jag’er up to the fire escape, and after some initial fumbling they succeed. Jag’er then takes a quick peek at the rooftop and notices a rooftop window as well as what looks like a ventilation shaft a little further. He helps the rest of the group up, and the party takes a look inside through the window. They see the truck and a large open garage space below them, but also notice four guards standing in said room. The group then decide to try their luck with the vent and manage to pry off the fan covering the vent. They crawl in, one by one, and pass by several gratings through which they can see some empty rooms as well as some guards. However, they have no context as to where these rooms are in relation to one another, so they carry on. The group reaches a dead end in the shaft and open a hatch in front of them. This leads them to a small bathroom.</p>
-								<p>From the bathroom they initially try to listen to any noise through the door, but nothing is heard in the immediate vicinity. They proceed through the door only to find themselves in a hallway, with several doors in sight. As they enter the hallway the party begins to hear gunfire and explosions some distance away, indicating the beginning of the distraction operation by the TCR. Now on a time limit, the party decides to explore the door on their immediate right first, carefully peeking in first. The room is dark, and the slight beam of light from the barely open door reveals a bed and someone lying on it. They then decide to turn on the lights in the room and realize that there are three soldiers sleeping there. The party quickly retreats back outside, turning off the lights in the process. The guards don’t appear to wake up. At this point the party remembers the bomb they were carrying with them and decide to plant it in the toilet. After this the party explores further, noticing a more heavy-duty door at the end of the hallway. The door is open, so they take look inside. This door leads to the garage area they saw from the roof. Instead of rushing in head-first, they decide to scout out the area a little further. Opposite from the garage door, they find a staircase leading up.</p> 
-								<p>On the second floor they attempt to quietly open the door from the stairwell but end up somehow dropping the entire door from its hinges with an extremely loud bang. The party observes no immediate response. They then carry on, in another hallway. They find a door on their right and decide to go in. This door is opened somewhat sloppily as well, but luckily there appears to be no-one inside. The room is covered in various corpses however, and there is a lonely chair sitting in the middle of the room, with a spotlight trained at it. Blood spatters cover the floor around the chair as well as the chair itself. Some of the bodies are wearing TCR outfits. The party decides to fall back and see what the rest of the hallway has in store. They reach the end and find a door on the left side. Jag’er decides to kick open the door with force, but the door does not give in. They then try opening it normally and it is indeed open. The party goes in and find themselves in a somewhat large office room.</p> 
-								<p>On the opposite side of the room they notice the Officer, in what looks to be a trance with several cables connecting from his arms and head to a computer in front of him. As the party prepares for combat the Officer comes to his senses and mocks the party for throwing away the small mercy he showed them by leaving them alive. He then removes his hooded jacket and reveals an arm cannon on his right arm and an arm blade on his left. After an initial exchange of fire, Rex makes an attempt at shooting the arm cannon. His weapon is not powerful enough however, and the bullet merely bounces off. Jag’er follows suit with his revolver and the shot manages to find its way directly into the barrel of the arm cannon. The entire arm explodes off, and the Officer is unable to use his cannon from here on. Instead, infuriated by the loss of his cannon he takes wild swings at the party with his arm blade, all the while the party is firing everything they’ve got at him. Everyone keeps consistently chipping away at the Officer, who shrugs off bullet after bullet, until Jag’er finally manages to blow a hole through the Officer’s right kneecap. The Officer retaliates with a special attack where he cleaves through the entire party not unlike a whirlwind. The party keeps returning fire, and eventually the Officer is bested by another shot from Jag’er going through his other kneecap. The Officer falls on his knees, barely conscious and babbles on about how this shouldn’t have happened.</p>
-								<p>As the party is in somewhat of a hurry at this point, they rush back downstairs to see what the rest of the building has in store. They come across an empty room initially and decide to each explore one room to make things go faster. Dad finds a kitchen and a clearly frightened chef cowering in the corner. Ava opens a door to the room closest to the front entrance, only to find two soldiers there looking at her in surprise. The soldiers notice how Ava is covered in blood, remember all the gunfire and noise from upstairs just now and quickly put two and two together. They decide to screw it all and run away, not willing to fight anyone who can beat the Officer. The next room contains a single guard playing video games in the corner, not noticing the party at all. The room also has a door to an armory of sorts, containing assault rifles and armor and such. The last remaining room has nothing but random junk inside, including chairs and wooden boards which the party uses to barricade the sleeping guards within their room.</p>
-								<p>Having exhausted all other options, the party enters the garage. They split up, two of them pouncing the guards by the garage doors and the rest taking care of the soldiers guarding the small side room. The side room is revealed to contain various gasoline barrels, gas cylinders and other explosive materials. The party decide to pour out a trail of gasoline to the garage door and do just that, after which everyone hops into the truck. As they begin to drive away, Dad flicks a match out of the truck’s window and the gasoline trail catches fire. The party drives away while the entire building explodes sky-high behind them.</p>
-								<p>Epilogue takes place in The Dive, the bar where everything began. Laura Reeve is there to congratulate the party on a job well done, even if they suffered one civilian casualty in the form of the chef. She also laments the loss of all the intelligence the Officer held as his remains, along with his computer and all the data was blown to bits. Otherwise everyone made it out more or less unscathed and the job got done.</p>
-								<h4>End of session 2.</h4>
-								<h4><a href="#design">Back</a></h4>
-							</article>
-							
-						<!-- Prototype -->
-							<article id="proto">
-								<h2 class="major">GCD Prototype</h2>
-								<p>Here are screenshots of various aspects of our GCD prototype. I was in charge of level design initially but ended up doing a whole lot more than just that. The only things in these pictures that are not done by me is the character sprite, we used a ready asset and I made some alterations to it for each of the different characters. What is also included in the prototype that is not clearly visible via screenshots are "functional" combat and the ability to enter each of the buildings, the code for both was written by myself as well.</p>
-								<span class="image main"><img src="images/proto1.jpg" alt="" /></span>
-								<p>As can be seen here the general layout outlined in my doodles (<a href="#art">here</a>) is what I ended up using for the prototype itself.</p>
-								<span class="image main"><img src="images/proto2.jpg" alt="" /></span>
-								<p>This entrance area is also mostly the same as the one showcased in my concept doodles.</p>
-								<span class="image main"><img src="images/proto3.jpg" alt="" /></span>
-								<p>Here you can see how each building has a corresponding individual interior which can be further modified for a specific purpose. For the purposes of the prototype I copied the generic layout for all the smaller buildings without adding any flavor to each but they are set up in such a way that they can be changed later.</p>
-								<span class="image main"><img src="images/proto4.jpg" alt="" /></span>
-								<p>Here's a closer look at the one interior that has some modifications made to it, there's an NPC and a visible dialogue box which is usually prompted by the player interacting with the NPC.</p>
-								<span class="image main"><img src="images/proto5.jpg" alt="" /></span>
-								<span class="image main"><img src="images/proto6.jpg" alt="" /></span>
-								<p>And finally here is the catacombs area that is the "endgame" of the prototype. Complete with the eventual boss at the end!</p>
-								<a href="#design">Back</a>
-							</article>
-							
-						<!-- Character 1 -->
-							<article id="character1">
-								<h2 class="major">GCD Character</h2>
-								<p>The Setting: Our concept takes place in a medieval fantasy world that is unnamed (for now). The game covers a lot of different environments ranging from lush forests to snowy mountains, underground caves and scorching deserts. Magic exists and ancient relics grant power to those who are able to reach them. Many a soul has come to this land in search of that power but just as many have met their end at the hands of the Guardians watching over them. These poor souls hail from many different factions. Some are in it for the “greater good”, loyal soldiers of the power-hungry King. Others are in it for themselves, the bandits and mercenaries and traveling adventurers hoping to make a better life for themselves. And then there’s you, the protagonist, who wants to acquire the power to prevent all others from misusing it and to make the world a better, more peaceful place.</p>
-								<br><p>
-								Name: Marcus<br>
-								Gender and age: Male, 30-40<br>
-								Race: Human, warrior type<br>
-								Physical description: Think Guts from Berserk pretty much<br>
-								Role: One of the protagonist choices<br>
-								Starting point: A trained warrior but rusty, arriving in a strange new land out of necessity<br>
-								Ultimate goal: To defeat the guardians standing in his way and claim the power they hide before the antagonist.<br>
-								Profession, special skills, potential by the end: A trained warrior in the past, relearning forgotten skills as well as acquiring new magical abilities.<br>
-								Backstory: Used to be a ferocious warrior and a demon on the battlefield but after enough battles grew tired and retired to a farm.
-								Strengths and weaknesses: Physical strength, determination, urge to do the right thing (or what he believes to be the right thing).<br>
-								Emotions, relationships, needs, passions. Hobbies or personal interests. Likes, fears, obsessions: A loner by nature, doesn't get along well with other people. Has a brother with whom he shares a strong bond of rivalry.
-								Doesn't exactly enjoy battle but doesn't really mind it either if it's needed to get the job done. No hobbies, enjoys the quiet life he's been living so far and would like nothing more than to go back but the need to do the right thing is stronger. Hardened by all the combat, has no particular fears as he has "seen it all" before. Not particularly obsessed but has a very strong need to do what he feels is the right thing.<br>
-								Hidden secret: Although he doesn't much care for it, has a tendency to lose himself in battle when fighting for his life. This has caused him to gain his reputation as a warrior in the past, but it's as if there's a beast or demon living inside him that is unleashed in moments of desperation.</p>
-								<p>Is not at all the conversational type, prefers to not get involved in situations unless he happens to overhear something that triggers his need to do right by others. He is also very stubborn once he sets his mind to something and tends to not give up no matter how many times he is struck down in the process.<br>
-								He is very annoyed by blabbermouths expecting continuous conversation, as he greatly prefers just sitting in silence and mentally preparing for whatever trial is coming next. He has a very calm and collected feel to him in general.<br>
-								Can actually be dangerous to potential allies if his inner beast takes hold as at that point, he doesn’t care who it is that falls before his blade, as long as he alone is the last person standing. It takes considerable effort to calm him down from this state forcefully.</p>
-								<span class="image main"><img src="images/characterv2.png" alt="" /></span>
-								<p>I drew this some time after this character was created but this is more or less the kind of visual I had in mind when coming up with the character. I originally envisioned the character using a large two-handed sword or axe but dual-wielding one-handed swords works too.</p>
-								<a href="#design">Back</a>
-							</article>
-							
-						<!-- Character 2 -->
-							<article id="character2">
-								<h2 class="major">Freely Designed Character</h2>
-								<p>The Setting: Our modern-day world as we live in it now, except all the things that go bump in the night are real. Think World of Darkness but without its established canon. This particular concept takes place in an unnamed big city in an unnamed country (essentially the US without going into any specifics for the moment). The vampires in this world start weak but grow stronger with age, feeding and actively using their abilities. There has been an age-old war raging between the largest factions of both vampires and werewolves, as well as the numerous smaller factions of both all staking their claim to the coveted title of the rulers of the night. Our protagonist is thrust right into the middle of this ancient conflict as their sire, unbeknownst to them, was one of the leaders of the vampire court turned traitor. It was the sire’s burning desire to see the nocturnal world united and sharing the human cattle among each other instead of eternal war, and for this reason was hunted relentlessly by their former allies. Now it is up to the protagonist to carry out the will of their sire and take on all sides of the seemingly endless battle for control. With few allies and even fewer trustworthy ones to work with, the protagonist must find a way to fulfil the “destiny” etched into the very blood flowing through them.</p>
-								<p>Name: Jack<br>
-								Gender and age: Male, around 30 years old.<br>
-								Race: Formerly human, currently a fledgling vampire.<br>
-								Physical description: Physical attributes are those of an average human male appearance-wise, with sunken cheeks and pale skin. Overall looks a little more “dead” than the average person.<br>
-								Role: Protagonist.<br>
-								Starting point: The character begins his journey as a normal human, on his way home from the store one night.  Turns out getting mugged was the least of his worries that evening, as the real goal of the dying vampire who attacked him was to create progeny to carry on their legacy.<br>
-								Ultimate goal: Since getting introduced to his new unlife, he wants nothing more than to be left to his own devices and keep unliving in peace, but his sire’s dying wish is burned into his blood and he can’t ignore the urge to complete the task set before him forever.<br>
-								Profession, special skills, potential by the end: He used to be a game designer by profession with no special skills to aid him, but his new condition has expanded his potential infinitely. He’s stronger, faster and better in every way compared to your average human and can only grow in strength as he matures as a vampire. But as his power grows, so too does his enjoyment of flexing his new skills and pitting himself against stronger and stronger opponents.<br>
-								Backstory, strengths and weaknesses: He was always a dreamer, a quality well-suited for his particular profession and he couldn’t help but hope that something would come along and spice up his mundane life. When that exact thing happened, he couldn’t believe his luck, until the urge to find out what caused all this began gnawing at the back of his mind. He’s also always had an issue with getting a little too into something that he enjoys, and this goes for pretty much anything, whether it be a particular video game, a project at work or the brutal slaughtering of the unfortunate enemies that get in his way.<br>
-								Emotions, relationships, needs, passions. Hobbies or personal interests. Likes, fears, obsessions, hidden secret: He isn’t too emotional of a person, but he likes to have a good time and tends to make the best of a bad situation. He often hides his true feelings behind a veil of humor. As a single guy adjusting to his new situation isn’t too much of a leap. He didn't use to be in the habit of feeling too passionate about things besides the latest video game he was obsessed with, but now with his newfound power and getting to try it out in actual combat he feels the need to get more and more of it. Ever since becoming practically immortal his biggest fear is losing said immortality.</p>
-								<p>Having embraced his new unlife, Jack tends to resolve situations violently much more often than is even necessary. Having been spared from the frailty of his mortal form he cares little for human opposition and has not yet encountered the various other nocturnal predators lurking in the night fear next to nothing in this new immortal existence.<br>
-								He also still retains his sense of humor and employs it liberally to either taunt his enemies or lessen the pain of the occasional defeat. He has a hard time carrying a prolonged conversation, having become nearly hyperactive in his newfound form.<br>
-								With his vampiric powers he can still forego the occasional bloodbath in favor of a stealthy approach if needed, as this comes in handy for feeding purposes in certain situations as well.<br>
-								Is not outright burned by sunlight but is severely weakened during the day, thus prefers to rest to pass the time and is mostly active at night. He is also somewhat limited by the need for blood in prolonged scenarios, as him using his supernatural powers burns through this precious fuel rapidly.</p>
-								<a href="#design">Back</a>
-							</article>
-							
-						<!-- Character 3 -->
-							<article id="character3">
-								<h2 class="major">Real World Character</h2>
-								<p>The Setting: Set in Brazil in the mid 90’s, exact city not specified. Environments covered are the slum areas where our protagonist lives as well as the better-off residential and business districts where our protagonist works their craft. The concept focuses mostly on the protagonist and their day-to-day activity, so specifics are not that important as they live each day as if it was their last. And it very well could be, given the volatile environment they live in.</p>
-								<p>Name: Kat<br>
-								Gender and age: Female, 25<br>
-								Race: Human<br>
-								Physical description: Ever so slightly malnourished but otherwise fit and in good physical condition, not a model but pretty<br>
-								Role: Protagonist<br>
-								Starting point: A thief, hustler and con artist. A street kid through and through, has gotten by using her well-trained agility and sleight of hand skills as well as her ability to talk her way out of some serious trouble.<br>
-								Ultimate goal: To make a real life for herself and her band of fellow youngsters living on stolen scraps.<br>
-								Profession, special skills, potential by the end: No profession per se, but a thief out of necessity. Special skills include great agility, naturally developed basics of parkour, sleight of hand, great social skills and charm. Has the potential to rise above her unfortunate circumstances and become a real upstanding citizen or a professional cat burglar for hire.<br>
-								Backstory: Firstborn child of a family fallen on dire straits, she lost her parents at a very young age. Due to a lack of any close relatives she was left on her own as one of the “children nobody cares about”, she lived with the local homeless population for a while. There she met with fellow kids who shared the same fate and together they realized they were able to keep themselves fed by co-operating and coordinating their thieving efforts. They grew a strong bond together and although none of them would acknowledge it officially, became very much a family to each other.<br>
-								Strengths and weaknesses: Great agility, dexterity and social skills. Surprisingly strong when needed. No education, no profession, everything she knows she has learned herself.<br>
-								Emotions, relationships, needs, passions. Hobbies or personal interests. Likes, fears, obsessions: Very protective of her surrogate family and borderline obsessed with making it big to provide a better life for them, often at the cost of her own well-being. Enjoys outwitting people who try to stand in her way. Knows her limits well, but also trusts her abilities enough to make daring feats at times.<br>
-								Hidden secret: Has the potential of embracing the other side of the scale and becoming so obsessed with her own success that she will sacrifice anything and everything to reach her own goals.</p>
-								<p>Tends to avoid open combat, which is a surprisingly common occurrence in her environment and especially her line of work. She is perfectly capable in hand-to-hand combat if necessary, but she rarely wants things to get to that point.<br>
-								She is a very caring individual, despite having all the reasons in the world to be jaded towards other people. She rarely ignores a plea for help and goes out of her way to offer a helping hand if she can. She is also extremely kind-hearted, often giving up her own spoils to those less fortunate, even though she herself doesn’t have much to her name.<br>
-								On the other hand, when dealing with people she deems worth robbing, she can go the extra mile to even get the gold teeth out of their mouths if possible. She spares no mercy to those who openly flaunt their wealth and care nothing for others.</p>
-								<a href="#design">Back</a>
-							</article>
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
 
-						<!-- Code -->
-							<article id="code">
-								<h2 class="major">Code</h2>
-								<span class="image main"><img src="images/codebg.jpg" alt="" /></span>
-								<p>This section contains all the coding and Unity related material I have created or used during both the Game Engine 1 and Game Concept Development courses. The links provide further details about each category.</p>
-								<!--<p><a href="#movement">Movement and Camera</a></p>
-								<p><a href="#sliders">Audio Sliders</a></p>
-								<p><a href="#animation">Animation</a></p>-->
-								<p><a href="#misc">Miscellaneous</a></p>
-								<p><a href="#proto2">GCD Prototype</a></p>
-							</article>
-							
-						<!-- Code: Movement -->
-							<!--<article id="movement">
-								<h2 class="major">Movement and Camera</h2>
-								<span class="image main"><img src="images/codebg.jpg" alt="" /></span>
-								<p>Text Here.</p>
-								<p><a href="#sliders">Audio Sliders</a></p>
-								<p><a href="#animation">Animation</a></p>
-								<p><a href="#proto2">GCD Prototype</a></p>
-								<p><a href="#code">Back</a></p>
-							</article>-->
-							
-						<!-- Code: Sliders -->
-							<!--<article id="sliders">
-								<h2 class="major">Audio Sliders</h2>
-								<span class="image main"><img src="images/codebg.jpg" alt="" /></span>
-								<p>Text Here.</p>
-								<p><a href="#movement">Movement and Camera</a></p>
-								<p><a href="#animation">Animation</a></p>
-								<p><a href="#proto2">GCD Prototype</a></p>
-								<p><a href="#code">Back</a></p>
-							</article>-->
-							
-						<!-- Code: Animation -->
-							<!--<article id="animation">
-								<h2 class="major">Animation</h2>
-								<span class="image main"><img src="images/codebg.jpg" alt="" /></span>
-								<p>Text Here.</p>
-								<p><a href="#movement">Movement and Camera</a></p>
-								<p><a href="#sliders">Audio Sliders</a></p>
-								<p><a href="#proto2">GCD Prototype</a></p>
-								<p><a href="#code">Back</a></p>
-							</article>-->
-							
-						<!-- Code: Miscellaneous -->
-							<article id="misc">
-								<h2 class="major">Miscellaneous Work in Unity</h2>
-								<span class="image main"><img src="images/playermodel.jpg" alt="" /></span>
-								<p>This category contains all the miscellaneous things I have created in Unity during Game Engine 1. They could be split into further categories but there are so many little things that I don't believe they deserve their own categories as of right now.</p>
-								<span class="image main"><img src="images/playermodel2.jpg" alt="" /></span>
-								<p>The picture above is a player character model I created for use with several different assignments. It is made entirely of the defaul 3D shapes in Unity, and has a simple jumping animation attached to it. The animation itself simply reshapes the body of the model as the player holds the jump key, and returns it to normal on release. The same plays faster and in reverse as the player lands back on the ground. Examples of this can be seen below.</p>
-								<span class="image main"><img src="images/playermodel3.jpg" alt="" /></span>
-								<span class="image main"><img src="images/playermodel4.jpg" alt="" /></span>
-								<p>This same project also has a music track playing in the background as well as a sound effect attached to the player character that plays whenever the player jumps. This project served as my practice ground for many different assignments during the Game Engine 1 course, as it was my first attempt at creating a player character with a movement script, camera control, animation and sound effects. This project also holds my first attempt at a menu with functional audio sliders.</p>
-								<p><a href="#code">Back</a></p>
-							</article>
-							
-						<!-- Code: Prototype -->
-							<article id="proto2">
-								<h2 class="major">GCD Prototype</h2>
-								<span class="image main"><img src="images/protomenu.jpg" alt="" /></span>
-								<p>Here I go over everything I've done regarding the GCD Prototype, which ended up being the biggest undertaking of this entire spring. I was initially tasked with level design but I expanded my responsibilities quite a bit from there.</p>
-								<p>To begin with, the screenshot of the main menu visible above is what greets the player as they launch the game. Art isn't mine but the menu itself was made by me. All the buttons work and take the player to a few different scenes. Everything besides the background images and logo is my work.</p>
-								<span class="image main"><img src="images/protomenu2.jpg" alt="" /></span>
-								<p>As can be seen in the above image the game has audio sliders which are all set up whenever actual audio gets implemented to the game. The necessary script isn't in the project yet as there is no audio, but the structure can be seen in the audio category of this portfolio.</p>
-								<span class="image main"><img src="images/protomenu3.jpg" alt="" /></span>
-								<p>This is a simple screen that displays all the assigned inputs for the player. No rebinding is available as of right now.</p>
-								<span class="image main"><img src="images/protomenu4.jpg" alt="" /></span>
-								<p>And lastly here we see how everything is put together on Unity's side. The menu system consists of three different scenes, all utilizing the same script to switch between them. The script itself is assigned to the EventSystem object and is quite simple.<br>
-								<br>
-								<a href="#menuscript">MenuScript</a>
-								</p>
-								<span class="image main"><img src="images/protogame.jpg" alt="" /></span>
-								<p>Next up we have the first scene the player sees as they begin the game. All the sprites in the game are simple sprite objects made within Unity to serve as placeholders for the actual sprites which never got made. The ground, doors and background objects are all tagged accordingly to make scripting easier. What is also visible is a part of the player script which handles movement, jumping and attacking. Of these, the attacking part is my handiwork. I will attach the entire script here so it can be viewed in it's entirety but only specific parts of it were made by me.<br>
-								<br>
-								<a href="#playerscript">PlayerScript</a>
-								</p>
-								<p>The player's attack instantiates a clone of an existing game object, and if said clone collides with an enemy that enemy takes 1 damage. Each enemy has 3hp. The attack also has a simple animation of a falling sword.</p>
-								<span class="image main"><img src="images/proto1.jpg" alt="" /></span>
-								<span class="image main"><img src="images/proto3.jpg" alt="" /></span>
-								<span class="image main"><img src="images/proto5.jpg" alt="" /></span>
-								<p>The entirety of the village area of the prototype can be seen above. Every building has a door which can be entered, and each interior can be modified individually. Every type of house is also a separate prefab so they can be added or removed at will. Same goes for interiors. The code for entering and exiting doors is also quite simple, and can be found attached below.<br>
-								<br>
-								<a href="#doorscript">DoorScript</a>
-								</p>
-								<span class="image main"><img src="images/protospeech.jpg" alt="" /></span>
-								<p>And finally here we can see the dialogue system in action. It is mostly smoke and mirrors as the dialogue exists in the background but is inactive until the player walks to the NPC and presses the interaction key. This then activates the dialogue box as well as the first line of dialogue. The player can go through all the lines with repeated key presses, and as of right now the dialogue loops infinitely. The script I set up for this allows easy addition of new lines and is attached below.<br>
-								<br>
-								<a href="#speechscript">SpeechScript</a>
-								</p>
-								<p>And of course there is also the enemy scripting which I made some additions to as I implemented the basic combat mechanics. I also made the sprite flip directions depending on which way the enemy is facing at any given time. The rest of the enemy script is not my work, but is nevertheless available below.<br>
-								<br>
-								<a href="#enemyscript">EnemyScript</a>
-								</p>
-								<p>This covers the most important and highlight-worthy aspects of the prototype. Additional scripts and other things I've made can be found in the other categories.</p>
-								<!--<p><a href="#movement">Movement and Camera</a></p>
-								<p><a href="#sliders">Audio Sliders</a></p>
-								<p><a href="#animation">Animation</a></p>-->
-								<p><a href="#code">Back</a></p>
-							</article>
-							
-						<!-- Code: MenuScript -->
-							<article id="menuscript">
-								<h2 class="major">MenuScript</h2>
-								<pre>
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="about-section">
+        <span class="subheader-text">About Me</span>
+        <div class="about-section-content">
+            <div class="body-text">I'm a Business Information Technology (BIT) student at JAMK University of Applied Sciences in Jyväskylä, Finland. I have dabbled in a lot of fields for now as I've been finding my core strengths and interests, but everything seems to inevitably lead me towards the design and direction side of things, along with some light programming.</div>
+          <div class="body-text">Throughout my years of study I've tried my hand at several aspects of game development, but by far the largest single project I've worked on has been a game produced during Ticorporate Demo Lab called Fingerbang: All Bullets Pointin'. As such, it stands as my primary highlight in this portfolio.</div>
+            <div class="body-text">I served in several different roles throughout the production of Fingerbang, but my primary role was that of Product Owner, and particularily on the technological side of things. I am also mainly responsible for the gameplay design. Further information about the project can be found in its own section below.</div>
+        </div>
+      </div>
 
-public class MenuScript: MonoBehaviour
-{
-public void NextScene()
-{
-	SceneManager.LoadScene("GameScene_1");
-}
-	
-public void MainMenu()
-{
-	SceneManager.LoadScene("MainMenu");
-}
-	
-public void OptionsMenu()
-{
-	SceneManager.LoadScene("OptionsMenu");
-}
-	
-public void GuideMenu()
-{
-	SceneManager.LoadScene("GuideMenu");
-}
-	
-public void QuitGame()
-{
-	Application.Quit();
-}
-}
-								</pre>
-								<p><a href="#proto2">Back</a></p>
-							</article>
-							
-						<!-- Code: PlayerScript -->
-							<article id="playerscript">
-								<h2 class="major">PlayerScript</h2>
-								<pre>
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">My Projects</span>
 
-public class PlayerScript : MonoBehaviour
-{
-    
-    private Rigidbody2D rb;
-    private bool facingRight = true;
-    private float horizontalMove = 0f;
+        <div class="projects-container">
+          <!-- 
+            TODO
 
-    
-    [Header("Player Movement Settings")]
-    [Range(0, 10f)] public float speed = 1f;
-    [Range(0, 15f)] public float jumpForce = 8f;
-    [Space]
-    [Header("Ground Checker Settings")]
-    public bool isGrounded = false;
-    [Range(-5f, 5f)] public float checkGroundOffsetY = -1.9f;
-    [Range(0, 5f)] public float checkGroundRadius = 0.3f;
-	
-	static Vector3 playerPosition;
-	
-	[SerializeField] private float duration;
-	//[SerializeField] public GameObject hitBox;
-	public PlayerAttack attack;
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
 
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-		Cursor.visible = false;
-		Cursor.lockState = CursorLockMode.Locked;
-    }
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
+          <div class="project-card">
+            <img src="./assets/images/library_logo_fingerbang_steam.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Fingerbang: All Bullets Pointin'</div>
+              <div class="body-text project-card-text">A game demo created over 9 weeks during the Ticorporate Demo Lab</div>
+            </div>
+            <a class="button" href="./project-pages/project-fingerbang.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <!-- <div class="project-card">
+            <img src="./assets/images/code.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Project Name</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div> -->
+          <!-- <div class="project-card">
+            <img src="./assets/images/sketchbook.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </div>
 
-    void Update()
-    {
-        playerPosition = transform.position;
-		
-        if (isGrounded && Input.GetKeyDown(KeyCode.W))
-        {
-            rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
-        }
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
 
-        
-        horizontalMove = Input.GetAxisRaw("Horizontal") * speed;
-
-        
-        if (horizontalMove < 0 && facingRight)
-        {
-            Flip();
-        }
-        else if (horizontalMove > 0 && !facingRight)
-        {
-            Flip();
-        }
-		
-		if (Input.GetKeyDown("space"))
-		{
-			if (facingRight == true)
-			{
-				PlayerAttack attackHitBox;
-				attackHitBox = Instantiate(attack, new Vector2(transform.position.x + 1f, transform.position.y), transform.rotation);
-				Destroy(attackHitBox.gameObject, duration);
-				
-			}
-			
-			else if (facingRight == false)
-			{
-				PlayerAttack attackHitBox;
-				attackHitBox = Instantiate(attack, new Vector2(transform.position.x - 1f, transform.position.y), transform.rotation);
-				Destroy(attackHitBox.gameObject, duration);
-			}
-		}
-		
-		if (Input.GetKey("escape"))
-		{
-			Cursor.visible = true;
-			Cursor.lockState = CursorLockMode.None;
-			SceneManager.LoadScene("MainMenu");
-		}
-		
-		
-    }
-    private void FixedUpdate()
-    {
-        
-        Vector2 targetVelocity = new Vector2(horizontalMove * 10f, rb.velocity.y);
-        rb.velocity = targetVelocity;
-
-        CheckGround();
-    }
-
-    
-    private void Flip()
-    {
-        
-        facingRight = !facingRight;
-
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
-    }
-
-
-    private void CheckGround()
-    {
-        
-        Collider2D[] colliders = Physics2D.OverlapCircleAll
-            (new Vector2(transform.position.x, transform.position.y + checkGroundOffsetY), checkGroundRadius);
-
-        
-        if (colliders.Length > 1)
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
-        }
-    }
-	
-}
-								</pre>
-								<p><a href="#proto2">Back</a></p>
-							</article>
-							
-						<!-- Code: DoorScript -->
-							<article id="doorscript">
-								<h2 class="major">DoorScript</h2>
-								<pre>
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class DoorFunctionality : MonoBehaviour
-{
-	
-	[SerializeField] GameObject entryDoor;
-	[SerializeField] GameObject destinationDoor;
-	[SerializeField] GameObject player;
-	
-	[SerializeField] private bool playerIsIn;
-	
-	
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F) && playerIsIn)
-		{
-			player.transform.position = destinationDoor.transform.position;
-		}
-    }
-	
-	void OnTriggerEnter2D(Collider2D collider)
-	{
-		if (collider.gameObject.CompareTag("Player"))
-		{
-			playerIsIn = true;
-		}
-	}
-	
-	void OnTriggerExit2D(Collider2D collider)
-	{
-		if (collider.gameObject.CompareTag("Player"))
-		{
-			playerIsIn = false;
-		}
-	}
-}
-								</pre>
-								<p><a href="#proto2">Back</a></p>
-							</article>
-							
-						<!-- Code: SpeechScript -->
-							<article id="speechscript">
-								<h2 class="major">SpeechScript</h2>
-								<pre>
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class NPCSpeech : MonoBehaviour
-{
-	
-	[SerializeField] private bool playerIsIn;
-	[SerializeField] GameObject dialogueBoxBackground;
-	[SerializeField] private GameObject[] dialogueText;
-	
-	[SerializeField] private int dialogueIndex = 0;
-	[SerializeField] int koko;
-	
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-		koko = dialogueText.Length;
-		
-        if (Input.GetKeyUp(KeyCode.F) && playerIsIn)
-		{
-			dialogueBoxBackground.SetActive(true);
-			
-			if (dialogueIndex >= dialogueText.Length)
-			{
-				dialogueText[dialogueText.Length - 1].SetActive(false);
-				dialogueIndex = 0;
-				NextDialogue();
-			}
-			
-			else
-			{
-				NextDialogue();
-			}
-		}
-		
-		
-		if (playerIsIn == false)
-		{
-			EndDialogue();
-		}
-    }
-	
-	void OnTriggerEnter2D(Collider2D collider)
-	{
-		if (collider.gameObject.CompareTag("Player"))
-		{
-			playerIsIn = true;
-		}
-	}
-	
-	void OnTriggerExit2D(Collider2D collider)
-	{
-		if (collider.gameObject.CompareTag("Player"))
-		{
-			playerIsIn = false;
-		}
-	}
-	
-	void NextDialogue()
-	{
-		if (dialogueIndex == dialogueText.Length)
-		{
-			dialogueText[dialogueIndex].SetActive(false);
-			dialogueIndex = 0;
-		}
-		
-		else 
-		{
-			if (dialogueIndex == 0)
-			{
-				dialogueText[dialogueIndex].SetActive(true);
-				dialogueIndex++;
-			}
-			
-			else
-			{
-				dialogueText[(dialogueIndex - 1)].SetActive(false);
-				dialogueText[dialogueIndex].SetActive(true);
-				dialogueIndex++;
-			}
-		}
-	}
-	
-	void EndDialogue()
-	{
-		dialogueBoxBackground.SetActive(false);
-		
-		for (int i = 0; i <= dialogueText.Length - 1; i++)
-		{
-			dialogueText[i].SetActive(false);
-		}
-		
-		dialogueIndex = 0;
-	}
-}
-								</pre>
-								<p><a href="#proto2">Back</a></p>
-							</article>
-							
-						<!-- Code: EnemyScript -->
-							<article id="enemyscript">
-								<h2 class="major">EnemyScript</h2>
-								<pre>
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class GuardianAI : MonoBehaviour
-{
-    public float speedOfWalking = 3;
-    public int patrolDistance = 10;
-    public Transform patrolledPosition;
-    public bool movingRight;
-	
-	//Testing for HP stuff
-	public int health = 3;
-	
-	//Experimental knockback from attacks
-	private Rigidbody2D rb;
-	public float knockbackForce;
-
-    Transform player;
-    public float chasingDistance = 10;
-
-    /*used for debug*/
-    //public float DistanceToPosition;
-    /**/
-
-    private bool patrolling = true;
-    private bool chasing = false;
-    private bool returning = false;
-	
-	//Used for flipping the sprite according to direction of movement
-	private bool facingRight = true;
-
-    void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-		rb = GetComponent<Rigidbody2D>();
-    }
-
-    void Update()
-    {
-
-        /*used for debug*/
-        //DistanceToPosition = transform.position.x - patrolledPosition.position.x;
-        /**/
-
-        if (Vector2.Distance(transform.position, player.position) < chasingDistance)
-        {
-
-            patrolling = false;
-            chasing = true;
-            returning = false;
-        }
-        
-        else if (Vector2.Distance(transform.position, patrolledPosition.position) < patrolDistance)
-        {
-            patrolling = true;
-            chasing = false;
-            returning = false;
-        }
-        
-        else if (Vector2.Distance(transform.position, player.position) > chasingDistance)
-        {
-            
-            patrolling = false;
-            chasing = false;
-            returning = true;
-        }
-
-        if (patrolling == true)
-        {
-            Patrolling();
-        }
-        else if (chasing == true)
-        {
-            Chasing();
-        }
-        else if (returning == true)
-        {
-            ReturnToPosition();
-        }
-		
-		//Flips the sprite for the enemy while patrolling
-		if (movingRight && facingRight)
-        {
-            Flip();
-        }
-        else if (!movingRight && !facingRight)
-        {
-            Flip();
-        }
-		
-		//Checking to see if the sprite needs flipping while chasing player
-		if (chasing == true && player.position.x > transform.position.x && facingRight)
-		{
-			Flip();
-		}
-		
-		else if (chasing == true && player.position.x < transform.position.x && !facingRight)
-		{
-			Flip();
-		}
-		
-		//If health drops to 0, destroy this enemy
-		if (health <= 0)
-		{
-			Destroy(this.gameObject);
-		}
-
-    }
-
-    void Patrolling()
-    {
-        
-
-        if (transform.position.x > patrolledPosition.position.x + patrolDistance / 2)
-        {
-            movingRight = false;
-        }
-        else if (transform.position.x < patrolledPosition.position.x - patrolDistance / 2)
-        {
-            movingRight = true;
-        }
-
-        if (movingRight)
-        {
-            transform.position = new Vector2(transform.position.x + speedOfWalking * Time.deltaTime, transform.position.y);
-        }
-        else
-        { 
-            transform.position = new Vector2(transform.position.x - speedOfWalking * Time.deltaTime, transform.position.y);
-        }
-    }
-
-    void Chasing()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, player.position, speedOfWalking * Time.deltaTime);
-    }
-    
-    void ReturnToPosition()
-    { 
-        transform.position = Vector2.MoveTowards(transform.position, patrolledPosition.position, speedOfWalking * Time.deltaTime);
-        
-    }
-	
-	//Once again this whole thing is used for flipping the sprite, courtesy of Juho's implementation in the player script.
-	private void Flip()
-    {
-        
-        facingRight = !facingRight;
-
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
-    }
-	
-	//Testing collider stuff out
-	void OnTriggerEnter2D(Collider2D collider)
-	{
-		if (collider.gameObject.CompareTag("PlayerAttack"))
-		{
-			health = health - 1;
-			rb.AddForce(transform.right * knockbackForce, ForceMode2D.Impulse);
-		}
-	}
-}
-								</pre>
-								<p><a href="#proto2">Back</a></p>
-							</article>
-							
-						<!-- Code: Placeholder -->
-							<article id="animation">
-								<h2 class="major">Animation</h2>
-								<span class="image main"><img src="images/codebg.jpg" alt="" /></span>
-								<p>Text Here.</p>
-								<p><a href="#movement">Movement and Camera</a></p>
-								<p><a href="#sliders">Audio Sliders</a></p>
-								<p><a href="#proto2">GCD Prototype</a></p>
-								<p><a href="#code">Back</a></p>
-							</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
-
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
-					</div>
-					
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Peter Hakanen. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        This should be the same across all pages.
+      -->
+      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
+      </a> -->
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://twitter.com/Taigonator">
+        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:peter.hakanen@gmail.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
 
 	</body>
 </html>
