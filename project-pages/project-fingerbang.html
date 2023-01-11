@@ -48,56 +48,97 @@
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
 
-      <!-- PROJECT HEADER -->
-      <div id="project-header">
-          <!-- 
-            TODO
+        <!-- PROJECT HEADER -->
+        <div id="project-header">
+            <!--
+          TODO
 
-            - Change the 'main-title' text to the name of your project
-            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
-            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
-          -->
-        <div class="main-title">Fingerbang: All Bullets Pointin'</div>
-        <div class="body-text">A fast-paced FPS inspired by both retro and modern FPS games. Fingerbang combines elements from each in order to create a mix of its own, with a scoring system added on top to gauge your performance through the different levels.</div>
-        <image class="project-header-image" src="../assets/images/fingerbanglogothumbnail.png">
-      </div>
+          - Change the 'main-title' text to the name of your project
+          - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+          - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+        -->
+            <div class="main-title">Fingerbang: All Bullets Pointin'</div>
+            <div class="body-text">A fast-paced FPS inspired by both retro and modern FPS games. Fingerbang combines elements from each in order to create a mix of its own, with a scoring system added on top to gauge your performance through the different levels.</div>
+            <image class="project-header-image" src="../assets/images/fingerbanglogothumbnail.png">
+        </div>
 
-      <!-- PROJECT DETAILS -->
-      <!-- 
-        TODO
+        <!-- PROJECT DETAILS -->
+        <!--
+      TODO
 
-        - Change the 'subheader-text' to whatever header you want for project details
-        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
-      -->
-      <div id="project-details">
-          <div class="subheader-text">Project Details</div>
-          <div class="project-details-content">
-              <div class="body-text">Project Fingerbang began its life when the initial concepting phase of Ticorporate started on September of 2022. I had thought up the original concept some time earlier, and suggested it as a basis for further refinement for my partner-in-crime Aleksi Pellinen. After additional ideation and a quick two-week gameplay prototype later, we ended up among the few concepts selected for further production.</div>
-              <div class="project-gallery-content">
-                  <div class="gallery-image-container half-width">
-                      <img src="../assets/images/fbprotoshoot.gif" class="gallery-image">
-                      <span class="image-caption">Very basic mechanics in place such as shooting.</span>
-                  </div>
-                  <div class="gallery-image-container half-width">
-                      <img src="../assets/images/fbprotoparry.gif" class="gallery-image">
-                      <span class="image-caption">The early prototype also featured parrying and dashing.</span>
-                  </div>
-              </div>
-              <div class="body-text">This very early prototype was created in two weeks by me, using a mix of proprietary graphical assets made by Aleksi and premade textures. Due to time constraints the prototype level was put together using Unity's default cubes. The entire prototype consists of only 12 simple scripts, mostly allowing for basic interactions between the player and enemies. This would however end up serving as the basis upon which the eventual project would be built.</div>
-              <div class="gallery-image-container">
-                  <img src="../assets/images/fbprotoeditor.png" class="gallery-image">
-                  <span class="image-caption">Some scripts and prefab predecessors would be carried over to the final product.</span>
-              </div>
-              <div class="body-text">At the beginning of pre-production, we as a team made some clear guidelines for ourselves going forward, such as setting in stone the scale for objects in the project (1 unit in Unity would roughly correspond to one meter, and every "tile" would be 4x4 units in size for example). Almost immediately afterwards I began working on our first level, the initial plan for which was to only cover the basic mechanics of the game and immediately lead into the main level planned for the game.</div>
-          </div>
-      </div>
+      - Change the 'subheader-text' to whatever header you want for project details
+      - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+    -->
+        <div id="project-details">
+            <div class="subheader-text">Rough Development Timeline</div>
+            <div class="project-details-content">
+                <div class="body-text">Project Fingerbang began its life when the initial concepting phase of Ticorporate started on September of 2022. I had thought up the original concept some time earlier, and suggested it as a basis for further refinement for my partner-in-crime Aleksi Pellinen. After additional ideation and a quick two-week gameplay prototype later, we ended up among the few concepts selected for further production.</div>
+                <div class="project-gallery-content">
+                    <div class="gallery-image-container half-width">
+                        <img src="../assets/images/fbprotoshoot.gif" class="gallery-image">
+                        <span class="image-caption">Very basic mechanics in place such as shooting.</span>
+                    </div>
+                    <div class="gallery-image-container half-width">
+                        <img src="../assets/images/fbprotoparry.gif" class="gallery-image">
+                        <span class="image-caption">The early prototype also featured parrying and dashing.</span>
+                    </div>
+                </div>
+                <div class="body-text">This very early prototype was created in two weeks by me, using a mix of proprietary graphical assets made by Aleksi and premade textures. Due to time constraints the prototype level was put together using Unity's default cubes. The entire prototype consists of only 12 simple scripts, mostly allowing for basic interactions between the player and enemies. This would however end up serving as the basis upon which the eventual project would be built.</div>
+                <div class="gallery-image-container">
+                    <img src="../assets/images/fbprotoeditor.png" class="gallery-image">
+                    <span class="image-caption">Some scripts and prefab predecessors would be carried over to the final product.</span>
+                </div>
+                <div class="body-text">At the beginning of pre-production, we as a team made some clear guidelines for ourselves going forward, such as setting in stone the scale for objects in the project (1 unit in Unity would roughly correspond to one meter, and every "tile" would be 4x4 units in size for example), coding conventions for programmers and resolution and color palettes for artists. Next up for me was writing a rough outline of the game in the form of a Game Design Document (GDD), a task that I was satisfied with after writing down some 450 lines of text about what I had in mind. Almost immediately afterwards I began working on our first level, the initial plan for which was to only cover the basic mechanics of the game and immediately lead into the main level planned for the game.</div>
+                <div class="body-text">
+                    The "Training Level", as it came to be called eventually, would end up quite a bit more extensive than what was originally planned. On top of going through all the basic gameplay mechanics the level ended up covering every single mechanic featured in the game, in a tailor-made fashion for each. The original outline for the level only covered movement, shooting and exploration, but as the level expanded I also added tutorials (both in-game text prompts as well as tangibly in the game itself) for practically every feature in the game:
+                    <ul>
+                        <li>the different powerups available for the player</li>
+                        <li>the different projectile types for enemies</li>
+                        <li>the on-demand bullet time feature</li>
+                        <li>secrets in the form of a classic hidden door as well as a semi-hidden shortcut at the beginning of the level</li>
+                        <li>boss fights</li>
+                    </ul>
+                    The level ended up becoming a fully-fledged traditional level for all intents and purposes, with a clear gameplay flow for the player to figure out and refine in order to reach the best rank possible. The design of the level also accounts for repeated playthroughs, with one of the secrets cutting the slower, movement-based beginning part of the level out in order to reach faster completion times. The base level design didn't go through too much iteration throughout development, but small tweaks had to be made here and there over time to both improve visibility, singposting for the player and to allow for teaching about the various mechanics as they were expanded throughout development. As a side note, all the clutter objects and "filler" objects throughout the level were primarily added to break up the visual monotony of the level. Different colors were used with lighting and areas to fit everything together (red lights for enemies shooting red projectiles, leading to the red berserk powerup, blue for blue projectiles and powerup, etc).
+                </div>
+                <div class="body-text">The entirety of the Pre-Production Phase was spent working on and improving the Training level, with our first testing sessions being held with only this level available. Early feedback brought up some good points about the jump feeling a little off, and resulted in the adding of "coyote time", to make jumping over gaps more forgiving. Some struggles with the basic movement was already noticeable at this stage, and thus I further expanded the movement tutorial texts to better guide players on how to extend jumps using the dash mechanic. I intentionally made the beginning of the level loosely in the vein of what was done in the Cuphead tutorial, infamous for being practically impossible for one journalist in particular. I wanted players to get the grip on the movement as early as possible, so it is retained in the back of their minds as they play further (and this would also play a large part in the design of the two later levels).</div>
+                <div class="body-text">After Pre-Production wrapped and we moved over to full Production Phase, I deemed the Training level to be in a shippable state and began working on our "main level", Red District. I had the blueprint for the level layout to base the skeleton framework around, but had to make some adjustments even at the very beginning due to the blueprint having been drawn up before the scope of the game was completely clear to us. Some minor adjustments had to also be made due to narrative reasons and me wanting to create continuity from the previous level. Surprisingly the process of creating the general level geometry for Red District, even though much more expansive than Training level, took less time overall, mostly due to me being more familiar with the process after having whipped up both the prototype level and the Training level from scratch. As was the case with Training level, some changes were made to the layout of the level throughout the process and as the design evolved, to further accomodate secrets and to avoid having to fill in too much of the background city scape with details. One major area of expansion was the boss arena as well, originally planned to be quite simple but as I added more and more mechanics for the boss itself, I also had to change the arena accordingly.</div>
+                <div class="body-text">Almost all of Post-Production was taken up with bugfixing, tweaking and testing various features and gameplay flows, damage and score values, level time requirements and other things that all collectively took away time from decorating Red District to the degree I initially desired. This eventually led to some of the buildings in the level remaining practically empty apart from enemies, an unfortunate consequence of the very strict production timeline and somethign to rectify in future development. I however remain quite happy with the few buildings I did manage to decorate in time, especially what ended up becoming an office building with more and more degradation as the player goes up the floors.</div>
+                <div class="body-text">In terms of gameplay design for Red District, I went through several iterations before settling with the final setup of having the player eliminate half the enemies in the level to access the boss. My initial idea was to have the player start from spawn, then have them clear the area house by house, with each having a hand-crafted encounter designed to challenge the player in a particular way. This didn't end up being feasible due to the rather small size of the buildings themselves, and thus I reverted to a model where the player must simply eliminate enemies in each building to unlock the boss fight. This didn't end up feeling good either, and based on some early feedback players wanted to manually open doors they came across instead of them being tied to specific enemy groups, and thus the final design for the gameplay flow was born: the player being able to freely roam through the map, with some buildings being open by default and others opening up either based on specific enemy groups being killed or the player manually opening the door. I also felt that killing all 120 or so enemies in the level took way too long, and ended up creating a script that allows for dynamically setting the percentage value of enemies to eliminate in editor (to accomodate for difficulty settings and such in the future and to allow for reuse in other levels). I settled on 50% for the final product, which ended up feeling like you had to fight to proceed further but didn't take too long for a player unfamiliar with the layout and enemy placement.</div>
+                <div class="body-text">For the boss fight against Paxton (the Red District boss), the initial idea was to have a giant mech shooting a lot projectiles at the player, in a somewhat similar vein to what the boss of Training level did. After some testing I felt the boss was somewhat lacking, and wanted to make it more engaging. Our original idea had the boss fight be completely separate from the rest of the level, with a checkpoint right before the fight in case players died against the boss. We didn't end up with enough time to implement the checkpoint, but I nevertheless wanted the boss fight to stand out more, and thus began working on additional mechanics for the boss. Because one of our sources of inspiration were the Nier games, I wanted the boss to periodically launch a wave of projectiles that forced the player to seek cover momentarily, an evolution of an idea we had toyed around with earlier. I managed to add in a mechanic where the boss covers the ground in unparriable projectiles, and in such volumes that simply dodging them is practically impossible. To account for this, the arena had elevated platforms on three sides. I however felt like because the player could permanently stand on one of these, it made the fight too simple. To avoid this, I created a system where the walls are closed by default, and only open up when the boss prepares to launch the ground wave. This too felt too simple still, and I expanded further by making only one of the walls open up at a time, and also randomizing which one it would be. Since I now had a mechanic I was happy with, I further expanded on the original boss script and made the boss invulnerable whenever he did the ground wave mechanic, to emphasize to the player that something other than shooting would be required, as well as added an audio cue as an extra indicator for the player.</div>
+                <div class="body-text">The final weeks of Post-Production were spent on preparing for the release, tweaking all the various values across the entire game and making the experience feel as good as possible. One of the biggest hurdles at this point was coming up with appropriate requirements for the different ranks in the game for each level, since our primary method of defining these were our own experience playing through them. As I was the one with by far the most play time in the game, I based all the scores on my own performance, but tuned everything down a notch from what I was able to achieve since originally I struggled with maintaining consistency in rankings. I also made another pass on these later down the line, making the rankings slightly more forgiving still, since I felt like some of the S-ranks still required too much from the player in order to achieve.</div>
+            </div>
+        </div>
 
-      <!-- IMAGE GALLERY -->
-      <div id="project-gallery">
-        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-        <div class="subheader-text">Image Gallery</div>
-        <div class="project-gallery-content">
-            <!-- 
+        <div id="project-details">
+            <div class="subheader-text">Design Details</div>
+            <div class="project-details-content">
+                <div class="body-text">Elaboration incoming.</div>
+            </div>
+        </div>
+
+        <div id="project-details">
+            <div class="subheader-text">On Being A Product Owner</div>
+            <div class="project-details-content">
+                <div class="body-text">While this technically wasn't my first experience working as a Product Owner (PO) for a project of this scope and scale, my previous experience is negligible as I for one wasn't officially a PO back then (working on a similar-ish game project some 8 years or so ago, with the working title of Coma), and the project didn't really end up going places back then. However, Fingerbang ended up giving me a very clear idea of all the things that go into being a PO, and especially an effective one. Although we had quite the unique circumstances due to having two Product Owners, one responsible for the art side and the other for the tech and mechanical side, I feel like I managed to grasp the finer aspects of the role quite well and the splitting of responsibilities definitely came with its own benefits, due to me being able to allocate more time for the development itself without having to worry about the art side too much (although we did still discuss about pretty much everything together, regardless of which umbrella the topic fell under).</div>
+                <div class="body-text">Although our Scrum process was somewhat freeform, I feel like we managed to smoothly work things out with our Scrum Master when it came to setting up our Zenhub, keeping it up to date and adding, removing and prioritizing issues as they arose throughout the development process. I also produced a Game Design Document (GDD) for us at the beginning of Pre-Production, and made the team peruse the contents of it to make sure everyone had an idea of what we would be working on (although personally I don't really believe in the traditional GDD design, and more so in the power of our whiteboard that we had set up in the office to remind us of the most important things at any given time. Too much information can be very exhaustive, after all).</div>
+                <div class="body-text">Even if not exactly in the definition of the PO role, I also ended up becoming the official spokesperson for our team and project, and the public face of the project in general. This I feel gave me good and extremely useful practice on how to both condense an idea to a digestible and understandable form for people unfamiliar with it, as well as gave me a reason to go over the core fundamental design of the game in my head over and over, which helped further refine the most important aspects of the project and making sure that I could better focus my attention on the things that are absolutely necessary, while paying less attention to those that were not. This was crucial in keeping the scope of the project realistic, even if some of my extra ideas, or "shower thoughts" as I referred to them did end up being scrapped from the Demo Lab version.</div>
+            </div>
+        </div>
+
+        <div id="project-details">
+            <div class="subheader-text">Publishing On Steam</div>
+            <div class="project-details-content">
+                <div class="body-text">The Steam publishing process, although completely and utterly unfamiliar to me personally at the start of the project, ended up being quite simple and, while not the most intuitive at times, was made quite understandable due to clear guidelines on what to do before publishing becomes available. In particular the checklists that Steam provides regarding both the store page as well as the game build function almost as a roadmap towards release. What was not straightforward or simple was setting a prospective release date, as due to either our incompetence or Steam being finicky we weren't able to ever make our exact release date public, which may have cost us a place on the upcoming games listing on Steam. There are also extensive options for keeping several different builds of the game available at any give time, which is a feature we didn't utilize whatsoever as we only had the one build at any given time. The process of patching a game is made very easy as well, which was a pleasant surprise.</div>
+                <div class="body-text">If any major complaints had to be found, the strict timeline towards release on Steam provided a few headaches through the process as we definitely could have done with a (more) dedicated marketing person. As things stood I had to take time away from my other responsibilities and duties to make sure we were meeting the deadlines set forth by Steam, e.g. we had to have our store listing as "Coming soon" at least two weeks before release, which meant I had to do our store page in a bit of a rush to get it out there while we were still knee-deep in active development. We also had to replace a large majority of our screenshots, as well as our trailer, right on the eve of release due to having made so much progress on the look of the Red District level compared to what we had at the time of making the store page.</div>
+            </div>
+        </div>
+
+        <!-- IMAGE GALLERY -->
+        <div id="project-gallery">
+            <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+            <div class="subheader-text">Image Gallery</div>
+            <div class="project-gallery-content">
+                <!--
               TODO
 
               This is where the images in the gallery live. Here's a simple gallery image for you to copy:
@@ -109,7 +150,7 @@
                   <span class="image-caption">IMAGE_CAPTION</span>
                 </div>
 
-              Half Width Image: 
+              Half Width Image:
 
                 <div class="gallery-image-container half-width">
                   <img src="../assets/images/IMAGE_NAME" class="gallery-image">
@@ -120,7 +161,7 @@
                   - IMAGE_NAME: the name of the image file in assets/images
                   - IMAGE_CAPTION: to the caption of the image
             -->
-            <!-- <div class="gallery-image-container half-width">
+                <!-- <div class="gallery-image-container half-width">
               <img src="../assets/images/code.jpeg" class="gallery-image">
               <span class="image-caption">Give your image a caption. People love context.</span>
             </div>
@@ -132,8 +173,9 @@
               <img src="../assets/images/camera.jpeg" class="gallery-image">
               <span class="image-caption">Give your image a caption. People love context.</span>
             </div> -->
+            <image class="project-header-image" src="../assets/images/fingerbanglogothumbnail.png">
+            </div>
         </div>
-      </div> 
     </div> 
 
     <!-- FOOTER -->
